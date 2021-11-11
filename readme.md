@@ -2,7 +2,14 @@
 >
 >reference https://github.com/weiaicunzai/pytorch-cifar100
 
-如需修改isGpu、isResume等选项或lr等超参数，请移步config.py
+### Implemented model: ResNet, DenseNet, ShuffleNet
 
-部分代码策略改变需要修改train.py源代码（e.g. 修改学习率策略）
+*All implementation based on corresponding model paper. It is suitable as a reference for reading papers.*
 
+#### About Modify to suit each model or to tune
+
+To modify options such as is_gpu and is_resume or super parameters such as LR, please modify config.py`
+
+Some strategy changes need to modify the source code of train.py (e.g. modify the learning rate schedule)
+
+`PS:ShuffleNet accuracy is not good, welcome to practice model tuning.`
