@@ -9,13 +9,10 @@ from datetime import datetime
 CIFAR100_PATH = '/home/hzq/pycharm/data/'
 
 # mean and std of cifar100 dataset
-CIFAR100_TRAIN_MEAN = (0.5070751592371323, 0.48654887331495095, 0.4409178433670343)
-CIFAR100_TRAIN_STD = (0.2673342858792401, 0.2564384629170883, 0.27615047132568404)
+CIFAR100_MEAN = (0.5070751592371323, 0.48654887331495095, 0.4409178433670343)
+CIFAR100_STD = (0.2673342858792401, 0.2564384629170883, 0.27615047132568404)
 # Dataload num_workers
 NUM_WORKERS = 2
-
-# CIFAR100_TEST_MEAN = (0.5088964127604166, 0.48739301317401956, 0.44194221124387256)
-# CIFAR100_TEST_STD = (0.2682515741720801, 0.2573637364478126, 0.2770957707973042)
 
 # network type
 NET = 'ShuffleNet'
@@ -55,12 +52,12 @@ INIT_LR = 0.5
 # for ResNet\DenseNet: 0.1
 WARM_UP_PHASE = 1
 
-# multiple lr schedule args
+# multiple lr schedule args for ResNet/DenseNet
 MILESTONES = [40, 60, 80]
 # for DenseNet:[30, 50, 70]
 # for ResNet:[40, 50, 60]
 
-# linear lr schedule args
+# linear lr schedule args for ShuffleNet
 lr_range = [0.5, 0]
 # for ShuffleNet:[0.5, 0]
 

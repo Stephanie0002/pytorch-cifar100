@@ -10,8 +10,8 @@ import torchvision
 from torchvision import transforms
 from Utils import config
 
-std = config.CIFAR100_TRAIN_STD
-mean = config.CIFAR100_TRAIN_MEAN
+std = config.CIFAR100_STD
+mean = config.CIFAR100_MEAN
 
 
 def cifar100_dataset():
